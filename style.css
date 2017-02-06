@@ -1,0 +1,170 @@
+*{
+    font-family: "Open Sans", sans-serif;
+}
+html{
+    background-color: #222;
+}
+body{
+    background-color: #333;
+    margin: 0 auto;
+    padding: 25px    ;
+    width: 80%;
+}
+
+.sh{
+    width: 30px;
+    height: 30px;
+    background-color: #386ec4;
+    float: right;
+    border: none;
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.box input{
+    box-sizing: border-box;
+    background-color: #333    ;
+    color: #eee;
+    padding: 5px 10px;
+    width: 400px;
+    border: 2px solid #152744;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.box button{
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    height: 40px;
+    border: 2px solid #152744;
+    background-color: #333;
+    color: #eee;
+    cursor: pointer;
+    box-sizing: border-box;
+    
+}
+
+h1{
+    margin: 0;
+    font-size: 16pt;
+    padding: 10px;
+    padding-left: 30px;
+    background-color: #33507f;
+    color: white;    
+}
+
+h3{
+    color: white;
+    margin: 0;
+}
+
+hr{
+    width: 50%;
+    border: 1px solid #555;
+}
+
+.sucesso,.erro,.primary{
+    display: none;
+    width: 400px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 5px auto;
+}
+
+.sucesso{
+    background-color: #53c151;
+    color: white;
+}
+
+.erro{
+    background-color: #c15162;
+    color: white;
+}
+
+.primary{
+    background: #386ec4;
+    color: white;
+}
+
+.box{
+    color: white;
+    padding: 30px 0;
+    display: none;    
+    background-color: #234172;    
+}
+
+.verBtn{
+    border:2px solid #777 !important;
+    width: 100px !important;
+}
+
+table{
+    border-collapse: collapse;
+    width: 60%;
+    margin: 10px auto;
+    border: 2px solid #555;
+}
+
+table tr{
+    border-bottom: 2px solid #555;
+}
+
+table td,th{
+    box-sizing: border-box;
+    width: 200px;
+    padding: 10px 20px;
+}
+
+table tr:nth-child(odd){
+    background: #555;
+    color: #fff;
+}
+
+table tr:nth-child(even){
+    background: #444;
+    color: #eee;
+}
+
+table tr:first-child{
+    text-align: left;
+    background: #333;
+    color: #ccc;
+}
+
+#ver{
+    text-align: center;
+}
+
+#ver button{
+    margin: 0 10px;
+    width: 300px;
+    display: inline-block;
+}
+
+#verNome,#verMorada,#verSalario{
+    margin: 0 !important;
+    border: 1px solid #777;
+    transition: 1s;
+}
+
+#ver input:disabled{
+    border: none;
+    background: #777;
+    color: #bbb;
+}
+
+#refreshList{
+    width: 60%;
+}
+
+@font-face{
+    font-family: "Open Sans";
+    src: url(opensans.ttf);
+}
