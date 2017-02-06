@@ -25,6 +25,28 @@ var app = {id:0};
         });
     }
 
+    /** Remover Empregado **/
+    app.remover = function(){
+        var id = app.id;
+
+        $.ajax({
+            url: 'process.php',
+            type: 'POST',
+            beforeSend: function(x){
+                $("#ver").html("Deletando empregado...");
+            },
+            dataType: 'json',
+            data: {tipo:"remover", id:id},
+            error: function(x,q,s){
+                console.log(x+q+s);
+            },
+            success: function(data){
+                $("#ver").html("Nenhum empregado a ser visualizado.");
+                console.log(data);
+            }
+        });
+    }
+
     /** Atualizar Tabela **/
     app.listagem = function() {  
         
@@ -54,6 +76,7 @@ var app = {id:0};
         
     }
     
+
     /** Ver Empregado **/
     app.ver = function(id) {
         app.id = id;

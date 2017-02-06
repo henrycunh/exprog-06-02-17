@@ -42,7 +42,7 @@
             
             echo json_encode($result);
         }
-        //Alterar Empregado
+        // Alterar Empregado
         else if($_POST['tipo'] == 'alterar'){
             $id = $_POST['id'];
             $nome = $_POST['nome'];
@@ -54,6 +54,13 @@
             $result['msg'] = "Empregado $nome alterado com sucesso.";
             $result['erro'] = false;
             
+            echo json_encode($result);
+        }
+        // Remover Empregado
+        else if($_POST['tipo'] == 'remover'){
+            $id = $_POST['id'];
+
+            $result['erro'] = mysqli_query($conn, "DELETE FROM empregado WHERE id=$id");
             echo json_encode($result);
         }
     }
